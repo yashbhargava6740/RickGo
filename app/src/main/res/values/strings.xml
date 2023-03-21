@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">homepage</string>
+
+    <string-array name="Locations">
+        <item>Academic Block - I</item>
+        <item>Academic Block - II</item>
+        <item>Academic Block - III</item>
+        <item>Academic Block - IV</item>
+        <item>Academic Block - V</item>
+        <item>Academic Block - VI</item>
+        <item>Academic Block - VII</item>
+        <item>Academic Block - VIII</item>
+        <item>Academic Block - IX</item>
+        <item>Academic Block - X</item>
+        <item>First Gate - Canteen</item>
+        <item>First Gate</item>
+    </string-array>
+</resources>
