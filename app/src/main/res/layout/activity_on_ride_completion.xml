@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:gravity="center_vertical"
     android:padding="15dp"
-    android:background="@drawable/bg">
+    android:background="@drawable/page2">
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,54 +17,48 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
+            android:layout_height="189dp"
+            android:background="@drawable/blackbg"
             android:gravity="center_horizontal"
-            android:padding="10dp"
-            android:background="@drawable/images"
-            >
+            android:orientation="vertical"
+            android:padding="10dp">
             <!-- Welcome Layout -->
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:text="Welcome"
+                android:textColor="#ecce0b"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                />
+                android:textStyle="bold" />
 
             <!-- Demo Name -->
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Name : Demo Name"
-                android:textSize="20sp"
-                android:layout_marginTop="10dp"
-                android:textColor="@color/black"
                 android:id="@+id/cname"
-                />
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:text="Name : Demo Name"
+                android:textColor="#ecce0b"
+                android:textSize="20sp" />
 
             <!-- Demo Phone -->
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Phone : Demo Phone"
-                android:textSize="20sp"
-                android:layout_marginTop="10dp"
-                android:textColor="@color/black"
                 android:id="@+id/cphone"
-                />
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginTop="10dp"
+                android:text="Phone : Demo Phone"
+                android:textColor="#ecce0b"
+                android:textSize="20sp" />
 
             <!-- Demo Uid -->
             <TextView
+                android:id="@+id/cuid"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="UID : Demo UID"
-                android:textSize="20sp"
                 android:layout_marginTop="10dp"
-                android:textColor="@color/black"
-                android:id="@+id/cuid"
-                />
+                android:text="UID : Demo UID"
+                android:textColor="#ecce0b"
+                android:textSize="20sp" />
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
@@ -73,21 +67,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:backgroundTint="#227AFF"
+        android:backgroundTint="#ecce0b"
         android:text="View Bookings"
-
+        android:textColor="#000000"
         android:textSize="18sp" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Log Out"
-        android:backgroundTint="#FF5722"
+        android:backgroundTint="#000000"
+        android:textColor="#ecce0b"
         android:textSize="18sp"
         android:layout_marginTop="50dp"
         android:layout_marginLeft="100dp"
         android:layout_marginRight="100dp"
         android:id="@+id/clogoutbtn"
         />
-
 </LinearLayout>

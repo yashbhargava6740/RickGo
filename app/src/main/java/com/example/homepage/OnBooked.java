@@ -54,14 +54,13 @@ public class OnBooked extends AppCompatActivity implements PaymentResultListener
             //options.put("order_id", "order_DBJOWzybf0sJbb");//from response of step 3.
             options.put("theme.color", "#3399cc");
             options.put("currency", "INR");
-            options.put("amount", "30000");//pass amount in currency subunits
+            options.put("amount", "3000");//pass amount in currency subunits
             options.put("prefill.email", "abhi.agrwl11@gmail.com");
             options.put("prefill.contact","7417162630");
             JSONObject retryObj = new JSONObject();
             retryObj.put("enabled", true);
             retryObj.put("max_count", 4);
             options.put("retry", retryObj);
-
             checkout.open(activity, options);
 
         } catch(Exception e) {
