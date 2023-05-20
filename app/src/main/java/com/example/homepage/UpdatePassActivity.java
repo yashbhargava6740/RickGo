@@ -47,6 +47,29 @@ public class UpdatePassActivity extends AppCompatActivity {
     }
 
     private boolean updatePass(String newp) {
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+        db.collection("driver").get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+            @Override
+            public void onSuccess(QuerySnapshot QS) {
+                boolean flag = false;
+                if (QS.isEmpty()) {
+                    Log.d(TAG, "No Data Found");
+                    return;
+                } else {
+                    for (QueryDocumentSnapshot qds : QS) {
+                        Driver D = qds.toObject(Driver.class);
+                        if ((D.getId()).equals(u_id)) {
+
+                        }
+                    }
+                }
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Log.w(TAG, "Error Getting Data",e);
+            }
+        });
         return true;
     }
 }

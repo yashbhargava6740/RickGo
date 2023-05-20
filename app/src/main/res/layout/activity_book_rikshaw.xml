@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BookRikshaw"
-    android:background="@drawable/page2"
+    android:background="@drawable/bgg"
     android:orientation="vertical">
 
     <Spinner
@@ -15,9 +15,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="245dp"
+        android:layout_marginTop="257dp"
         android:layout_marginBottom="445dp"
-        android:background="@color/black" />
+        android:background="@color/white" />
 
     <TextView
         android:id="@+id/textView4"
@@ -33,8 +33,7 @@
         android:layout_marginBottom="362dp"
         android:fontFamily="monospace"
         android:text="Destination"
-        android:textStyle="bold"
-        android:textColor="#ecce0b"
+        android:textColor="#A0ED92"
         android:textSize="24sp" />
 
     <TextView
@@ -46,15 +45,14 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="84dp"
-        android:layout_marginTop="7dp"
+        android:layout_marginTop="87dp"
         android:layout_marginEnd="0dp"
         android:layout_marginRight="40dp"
         android:layout_marginBottom="566dp"
-        android:fontFamily="@font/roboto"
+        android:fontFamily="@font/bangers"
         android:gravity="center"
-        android:textColor="@color/black"
         android:paddingRight="100dp"
-        android:text=" Book E-Riskshaw"
+        android:text=" B o o k  E - R i s k s h a w "
         android:textSize="19sp" />
 
     <Spinner
@@ -64,9 +62,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="363dp"
-        android:background="@color/black"
-        android:layout_marginBottom="326dp" />
+        android:layout_marginTop="373dp"
+        android:layout_marginBottom="326dp"
+        android:background="#F1F8F3" />
 
     <TextView
         android:id="@+id/textView3"
@@ -82,8 +80,7 @@
         android:layout_marginBottom="480dp"
         android:fontFamily="monospace"
         android:text="Source "
-        android:textStyle="bold"
-        android:textColor="#ecce0b"
+        android:textColor="#A0ED92"
         android:textSize="24sp" />
 
     <Button
@@ -95,8 +92,6 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="121dp"
-        android:textColor="#000000"
-        android:backgroundTint="#ecce0b"
         android:layout_marginTop="450dp"
         android:layout_marginEnd="138dp"
         android:layout_marginBottom="233dp"

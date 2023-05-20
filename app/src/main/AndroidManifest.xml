@@ -60,6 +60,9 @@
             android:name=".PrevBookings"
             android:exported="false" />
         <activity
+            android:name=".NoInternetActivity"
+            android:exported="false" />
+        <activity
             android:name=".loggedIn"
             android:exported="false" />
         <activity
@@ -67,9 +70,6 @@
             android:exported="false" />
         <activity
             android:name=".loginForm"
-            android:exported="false"></activity>
-        <activity
-            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -77,6 +77,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

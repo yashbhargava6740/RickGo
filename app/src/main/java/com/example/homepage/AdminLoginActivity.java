@@ -35,9 +35,9 @@ public class AdminLoginActivity extends AppCompatActivity {
         String user_id = getIntent().getStringExtra("UserID");
         String IS_LOGIN = sf.getString("UserID", "1");
         btn = findViewById(R.id.alogoutbtn);
-        btn1 = findViewById(R.id.click);
-        btn2 = findViewById(R.id.button);
-        btn3 = findViewById(R.id.buttons);
+        btn1 = findViewById(R.id.abookbtn);
+        btn2 = findViewById(R.id.aviewbookingbtn);
+        btn3 = findViewById(R.id.adddriver);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override

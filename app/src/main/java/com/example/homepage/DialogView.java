@@ -27,15 +27,14 @@ public class DialogView extends AppCompatActivity {
                                         text += "Your E-Rikshaw will reach you shortly";
                                         dialog.setContentView(R.layout.customdialog);
                                         dialog.setCancelable(false);
-                                        //Button btn = findViewById();
-
-//                                        btn.setOnClickListener(new View.OnClickListener() {
-//                                            @Override
-//                                            public void onClick(View view) {
-//                                                Toast.makeText(DialogView.this, "", Toast.LENGTH_SHORT).show();
-//                                                dialog.dismiss();
-//                                            }
-//                                        });
-//                                        dialog.show();
+                                        Button btn = dialog.findViewById(R.id.okbtn);
+                                        btn.setOnClickListener(new View.OnClickListener() {
+                                            @Override
+                                            public void onClick(View view) {
+                                                Toast.makeText(DialogView.this, "", Toast.LENGTH_SHORT).show();
+                                                dialog.dismiss();
+                                            }
+                                        });
+                                        dialog.show();
     }
 }

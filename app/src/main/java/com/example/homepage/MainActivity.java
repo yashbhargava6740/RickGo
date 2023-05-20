@@ -19,7 +19,7 @@ import java.net.NetworkInterface;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static int SPLASH_SCREEN = 1700;
+    private static int SPLASH_SCREEN = 5000;
 
     // Variables
     Animation topAnim, bottomAnim;
@@ -30,14 +30,26 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
+
         ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+        if(activeNetwork == null) {
+            Toast.makeText(this, "Oops! No Internet", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(MainActivity.this, NoInternetActivity.class);
+            startActivity(intent);
+            finish();
+        }
+        // Animations
+
         topAnim = AnimationUtils.loadAnimation(this, R.anim.top_animation);
         bottomAnim = AnimationUtils.loadAnimation(this, R.anim.bottom_animation);
+
         image = findViewById(R.id.imageView);
         logo = findViewById(R.id.textView);
+
         image.setAnimation(topAnim);
         logo.setAnimation(bottomAnim);
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

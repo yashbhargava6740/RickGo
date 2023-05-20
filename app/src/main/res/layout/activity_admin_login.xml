@@ -8,132 +8,102 @@
     android:orientation="vertical"
     android:gravity="center_vertical"
     android:padding="15dp"
-    android:background="@drawable/page2">
+    android:background="@drawable/bg">
 
     <com.google.android.material.card.MaterialCardView
-        android:layout_width="370dp"
-        android:layout_height="145dp"
-        app:cardCornerRadius="10dp">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        >
 
         <LinearLayout
-            android:layout_width="295dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="0dp"
-            android:background="@drawable/yellowbg"
-            android:gravity="center_horizontal"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:background="@drawable/images"
+            >
             <!-- Welcome Layout -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Welcome"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
 
             <!-- Demo Name -->
-
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Welcome"
-                android:textColor="#ffffff"
-                android:textSize="30sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/aname"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
+                android:layout_height="match_parent"
                 android:text="Name : Demo Name"
-                android:textColor="#ffffff"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/aname"
+                />
 
             <!-- Demo Phone -->
             <TextView
-                android:id="@+id/aphone"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
+                android:layout_height="match_parent"
                 android:text="Phone : Demo Phone"
-                android:textColor="#ffffff"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/aphone"
+                />
 
             <!-- Demo Uid -->
             <TextView
-                android:id="@+id/auid"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
-                android:backgroundTint="@color/black"
+                android:layout_height="match_parent"
                 android:text="UID : Demo UID"
-                android:textColor="#ffffff"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/auid"
+                />
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
     <Button
-        android:id="@+id/click"
+        android:id="@+id/adddriver"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/round_button"
-        android:backgroundTint="#ecce0b"
-        android:fontFamily="@font/roboto"
-        android:text="Book Your Drive"
-        android:textAllCaps="false"
-        android:textColor="#000000"
-        android:textSize="26sp"
-        android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/round_button"
-        android:backgroundTint="#ecce0b"
-        android:fontFamily="@font/roboto"
-        android:text="View Bookings"
-        android:textAllCaps="false"
-        android:textColor="#000000"
-        android:textSize="25sp"
-        android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/buttons"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/round_button"
-        android:backgroundTint="#ecce0b"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#FF2222"
         android:text="Add Driver"
-        android:fontFamily="@font/roboto"
-        android:textAllCaps="false"
-        android:textColor="#000000"
-        android:textSize="25sp"
-        android:textStyle="bold" />
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/abookbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#22FF26"
+        android:text="Book E-Rikshaw"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/aviewbookingbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#227AFF"
+        android:text="View Bookings"
+
+        android:textSize="18sp" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Log Out"
-        android:textStyle="bold"
-        android:textColor="#ffffff"
-        android:backgroundTint="#000000"
-        android:textSize="20sp"
-        android:layout_marginTop="10dp"
+        android:backgroundTint="#FF5722"
+        android:textSize="18sp"
+        android:layout_marginTop="50dp"
         android:layout_marginLeft="100dp"
         android:layout_marginRight="100dp"
         android:id="@+id/alogoutbtn"
